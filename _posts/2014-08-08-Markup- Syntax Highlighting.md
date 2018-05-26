@@ -19,20 +19,15 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
   width: 100%;
 }
 ```
+
 {% highlight scss linenos %}
-struct Celsius {
-    var temperatureInCelsius: Double
-    init(fromFahrenheit fahrenheit: Double) {
-        temperatureInCelsius = (fahrenheit - 32.0) / 1.8
-    }
-    init(fromKelvin kelvin: Double) {
-        temperatureInCelsius = kelvin - 273.15
-    }
+.highlight {
+  margin: 0;
+  padding: 1em;
+  font-family: $monospace;
+  font-size: $type-size-7;
+  line-height: 1.8;
 }
-let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
-// boilingPointOfWater.temperatureInCelsius is 100.0
-let freezingPointOfWater = Celsius(fromKelvin: 273.15)
-// freezingPointOfWater.temperatureInCelsius is 0.0
 {% endhighlight %}
 
 ```html
