@@ -19,7 +19,7 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
   width: 100%;
 }
 ```
-```
+{% highlight scss linenos %}
 struct Celsius {
     var temperatureInCelsius: Double
     init(fromFahrenheit fahrenheit: Double) {
@@ -33,7 +33,7 @@ let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
 // boilingPointOfWater.temperatureInCelsius is 100.0
 let freezingPointOfWater = Celsius(fromKelvin: 273.15)
 // freezingPointOfWater.temperatureInCelsius is 0.0
-```
+{% endhighlight %}
 
 ```html
 {% raw %}<nav class="pagination" role="navigation">
