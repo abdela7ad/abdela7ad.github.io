@@ -19,7 +19,7 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
   width: 100%;
 }
 ```
-```css
+```
 struct Celsius {
     var temperatureInCelsius: Double
     init(fromFahrenheit fahrenheit: Double) {
