@@ -14,7 +14,21 @@ Content Cell  | Content Cell
 Content Cell  | Content Cell
 
 Here's an example of an image, which is included using Markdown:
-
+```swift
+struct Celsius {
+    var temperatureInCelsius: Double
+    init(fromFahrenheit fahrenheit: Double) {
+        temperatureInCelsius = (fahrenheit - 32.0) / 1.8
+    }
+    init(fromKelvin kelvin: Double) {
+        temperatureInCelsius = kelvin - 273.15
+    }
+}
+let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
+// boilingPointOfWater.temperatureInCelsius is 100.0
+let freezingPointOfWater = Celsius(fromKelvin: 273.15)
+// freezingPointOfWater.temperatureInCelsius is 0.0
+```
 ![Image of a glass on a book]({{ site.baseurl }}/assets/img/pexels/book-glass.jpeg)
 
 Highlighting for code in Jekyll is done using Base16 or Rouge. This theme makes use of Rouge by default.
